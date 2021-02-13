@@ -18,17 +18,18 @@ public class ProfilePic implements Drawing {
 	
 
 	@GadgetInteger(min = 10, max = 30)
-	int n = 20;
+	int n = 14;
 	
 	
 	public void drawLines(View view) {
 		
 		int count_y = 0, count_p = 0;
 		
-		RNG rng = new RNG(6380972123782498275l);
+		RNG rng = new RNG(6581972124973596354l);
 
 		for (int i = -n/2; i < n/2; i++) {
 			
+//			double x = (rng.nextDouble() * 0.75 + 0.25) * h;
 			double x = rng.nextDouble() * h;
 			
 			view.setStroke(Color.BLACK);
@@ -40,9 +41,9 @@ public class ProfilePic implements Drawing {
 				
 				c = Color.hsb(50, rng.nextDouble() * 0.25 + 0.55, rng.nextDouble() * 0.45 + 0.05);
 				count_y++;
-			} else if (0.25 < d && d <= 0.75 && count_p < hue_max) {
+			} else if (0.25 < d && d <= 0.55 && count_p < hue_max) {
 				
-				c = Color.hsb(260, rng.nextDouble() * 0.75 + 0.25, rng.nextDouble() * 0.95 + 0.05);
+				c = Color.hsb(260, rng.nextDouble() * 0.75 + 0.25, rng.nextDouble() * 0.75 + 0.25);
 				count_p++;
 			} else {
 				
