@@ -19,6 +19,7 @@ public class Main implements Drawing {
 	String[] fileNames = {
 			"Mona Lisa.jpg",
 			"npv_ed.jpg",
+			"npv_pb.jpg",
 			"building.jpg",
 			"catparty.jpg",
 			"christmas.jpg",
